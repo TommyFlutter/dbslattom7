@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBS Contact Live Demo</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wghtq0,100;0"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet"href="./src/styles/main.css"/>
+    <link rel="stylesheet"href="./src/styles/reset.css"/>
+    
+</head>
+<body>
+    <header>
+        <h1>DBS Contact Apps</h1>
+    </header>
+    <main>
+        <form class="form">
+            <div class="form__group">
+                <label for ="name" class="form__label">Name</label>
+                <input id="name"
+                name= "name"
+                type= "text"
+                class= "form__input"
+                placeholder= "e.g John Doe"
+                />
+            </div>
+
+            <div class="form__group">
+                <label for ="phone" class="form__label">Phone Number</label>
+                <input
+                id="phone"
+                name="phone"
+                type="text"
+                class= "form__input"
+                placeholder="e.g. 00000000"
+                />
+            </div>
+
+            <div>
+                <input 
+                id="favorite"
+                name="favorite"
+                type="checkbox"
+                />
+                <label for="favorite">
+                    Mark as favorite</label>
+            </div>
+            <button class="form__submit">
+                Add to Contact</button>
+        </form>
+
+
+
+
+
+   
+    <section class="contacts">
+        <h2>* Favorite</h2>
+        <ul class="contacts__list contacts__list--favorite"></ul>
+    </section>
+
+    <section class="contacts">
+        <h2>** Default</h2>
+        <ul class="contacts__list contacts__list--default"></ul>
+    </section>
+
+</main>
+<script src="./script.js"></script>
+   
+    </body>
+</html>
+
+
